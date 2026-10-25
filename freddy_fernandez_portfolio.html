@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freddy Fernandez | Mechanical Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        .nav-link { position: relative; padding-bottom: 0.25rem; font-weight: 500; color: #1e293b; transition: color 0.2s; }
+        .nav-link:hover { color: #000; }
+        .nav-link.active { color: #000; }
+        .nav-link.active::after {
+            content: ''; position: absolute; left: 0; bottom: 0; width: 100%; height: 2px; background-color: #000;
+        }
+        .btn { display: block; width: 220px; padding: 0.75rem 0; text-align: center; border-radius: 6px; font-weight: 600; font-size: 0.875rem; text-transform: uppercase; letter-spacing: 0.05em; transition: all 0.2s; }
+        .btn-primary { background-color: #1e293b; color: white; }
+        .btn-primary:hover { background-color: #334155; transform: translateY(-1px); }
+        img { border-radius: 12px; }
+        .section-bg-alt { background-color: #f8fafc; }
+    </style>
+</head>
+<body class="bg-white text-slate-800 antialiased">
+
+    <!-- HEADER -->
+    <header class="w-full bg-white/90 backdrop-blur-md sticky top-0 z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-8 h-20 flex justify-between items-center">
+            <!-- Left: Navigation -->
+            <nav class="flex space-x-8 items-center">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#projects" class="nav-link active">Projects</a>
+                <div class="flex space-x-4 ml-4 pl-4 border-l border-slate-200 text-lg">
+                    <a href="#" class="text-slate-600 hover:text-black transition"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="text-slate-600 hover:text-black transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="text-slate-600 hover:text-black transition"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+            </nav>
+            <!-- Right: Site Title -->
+            <div class="font-bold text-xl tracking-tight text-slate-900">
+                Freddy Fernandez's Portfolio
+            </div>
+        </div>
+    </header>
+
+    <!-- INTRO SECTION -->
+    <section id="home" class="max-w-7xl mx-auto px-8 py-24 md:py-32">
+        <div class="flex flex-col md:flex-row items-center gap-16">
+            <!-- Left: Headshot -->
+            <div class="w-full md:w-1/2 flex justify-center relative">
+                <!-- Faint background accent (simulating wireframe/technical background) -->
+                <div class="absolute inset-0 bg-[url('https://placehold.co/600x600/f8fafc/e2e8f0?text=CAD+Wireframe')] bg-center bg-contain bg-no-repeat opacity-40 z-0 scale-110"></div>
+                <img src="https://placehold.co/500x550/e2e8f0/475569?text=Your+Headshot+Here" alt="Freddy Fernandez" class="w-full max-w-md h-[550px] object-cover rounded-[2rem] shadow-xl z-10 relative">
+            </div>
+            
+            <!-- Right: Content -->
+            <div class="w-full md:w-1/2 flex flex-col justify-center space-y-8 z-10">
+                <h1 class="text-5xl md:text-6xl font-extrabold text-slate-900 leading-[1.1] tracking-tight">
+                    I'm Freddy Fernandez,<br>
+                    an Engineering Student.
+                </h1>
+                <p class="text-lg text-slate-600 leading-relaxed max-w-lg font-medium">
+                    I am a Mechanical Engineering student at the University of Florida specializing in the complete design-to-manufacturing (D2M) pipeline for high-performance robotics and motorsports. Scroll below to see how I bridge the gap between conceptual CAD kinematics and physical reality.
+                </p>
+                <div class="flex flex-col space-y-3 pt-4">
+                    <a href="#" class="btn btn-primary">LinkedIn</a>
+                    <a href="#projects" class="btn btn-primary">Projects</a>
+                    <a href="#" class="btn btn-primary">Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION DIVIDER -->
+    <div id="projects" class="w-full py-12 bg-slate-900 text-center">
+        <h2 class="text-3xl font-bold text-white tracking-tight uppercase">Featured Engineering Projects</h2>
+    </div>
+
+    <!-- PROJECT 1: Telescopic Boom -->
+    <section class="py-24 max-w-7xl mx-auto px-8">
+        <div class="text-sm font-bold tracking-widest text-sky-600 uppercase mb-3">FIRST Robotics</div>
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="w-full lg:w-1/2">
+                <img src="image_a64e82.jpg" alt="Telescopic Boom" onerror="this.onerror=null; this.src='https://placehold.co/800x600/f1f5f9/94a3b8?text=image_a64e82.jpg';" class="w-full object-cover shadow-lg border border-slate-100">
+            </div>
+            <div class="w-full lg:w-1/2 space-y-6">
+                <h2 class="text-4xl font-extrabold text-slate-900">3-Stage Telescopic Boom</h2>
+                <p class="text-slate-600 text-lg">Foundation of the 4th Place World Championship robot, featuring precise multi-stage linear actuation.</p>
+                <ul class="space-y-4 pt-4">
+                    <li class="flex items-start">
+                        <span class="text-sky-500 mr-3 mt-1"><i class="fa-solid fa-gear"></i></span>
+                        <div><strong class="text-slate-900">Cascading Belt Kinematics:</strong> Continuous looping belt drives a precise 2:1 synchronized linear extension ratio.</div>
+                    </li>
+                    <li class="flex items-start">
+                        <span class="text-sky-500 mr-3 mt-1"><i class="fa-solid fa-weight-scale"></i></span>
+                        <div><strong class="text-slate-900">Cantilever Mass Reduction:</strong> Aggressive triangular pocketing minimizes moving mass and extreme bending moments.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 2: Concentric Turret -->
+    <section class="py-24 section-bg-alt">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-sm font-bold tracking-widest text-sky-600 uppercase mb-3 text-right">FIRST Robotics</div>
+            <div class="flex flex-col-reverse lg:flex-row gap-16 items-center">
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <h2 class="text-4xl font-extrabold text-slate-900">Multi-Axis Turret Integration</h2>
+                    <p class="text-slate-600 text-lg">A custom rotational kinematics assembly designed for robust internal payload routing.</p>
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex items-start">
+                            <span class="text-sky-500 mr-3 mt-1"><i class="fa-solid fa-arrows-spin"></i></span>
+                            <div><strong class="text-slate-900">Rotational Kinematics:</strong> High-reduction concentric gear-to-gear drive rotating securely around a primary central shaft.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-sky-500 mr-3 mt-1"><i class="fa-solid fa-route"></i></span>
+                            <div><strong class="text-slate-900">Passive Dynamic Routing:</strong> Independent peripheral wheels mechanically redirect payload through optimal transition ramps.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="image_9c5d1e.png" alt="Turret Iso" onerror="this.onerror=null; this.src='https://placehold.co/600x400/e2e8f0/94a3b8?text=image_9c5d1e.png';" class="col-span-2 w-full object-cover shadow-md border border-slate-200 bg-white">
+                    <img src="image_9c5d3b.png" alt="Turret Top" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e2e8f0/94a3b8?text=image_9c5d3b.png';" class="w-full h-full object-cover shadow-md border border-slate-200 bg-white">
+                    <img src="image_a63b23.png" alt="Turret Side" onerror="this.onerror=null; this.src='https://placehold.co/400x300/e2e8f0/94a3b8?text=image_a63b23.png';" class="w-full h-full object-cover shadow-md border border-slate-200 bg-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 3: D2M Pipeline -->
+    <section class="py-24 max-w-7xl mx-auto px-8">
+        <div class="text-sm font-bold tracking-widest text-sky-600 uppercase mb-3">FIRST Robotics</div>
+        <div class="flex flex-col lg:flex-row gap-16 items-center">
+            <div class="w-full lg:w-1/2 flex flex-col gap-4">
+                <img src="image_a63f9a.jpg" alt="Sketch" onerror="this.onerror=null; this.src='https://placehold.co/600x300/f1f5f9/94a3b8?text=image_a63f9a.jpg';" class="w-full object-cover shadow-md border border-slate-100 h-64">
+                <div class="grid grid-cols-2 gap-4 h-48">
+                    <img src="image_a6439a.jpg" alt="SolidCAM" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f1f5f9/94a3b8?text=image_a6439a.jpg';" class="w-full h-full object-cover shadow-md border border-slate-100">
+                    <img src="image_a64ae3.jpg" alt="SolidVerify" onerror="this.onerror=null; this.src='https://placehold.co/400x300/f1f5f9/94a3b8?text=image_a64ae3.jpg';" class="w-full h-full object-cover shadow-md border border-slate-100">
+                </div>
+            </div>
+            <div class="w-full lg:w-1/2 space-y-6">
+                <h2 class="text-4xl font-extrabold text-slate-900">Parametric Design to Manufacturing</h2>
+                <p class="text-slate-600 text-lg">Taking complex mechanical logic from a raw 2D sketch all the way through CNC machining validation.</p>
+                <div class="space-y-5 pt-4">
+                    <div class="border-l-4 border-slate-800 pl-4">
+                        <h4 class="font-bold text-slate-900">Master Datum Geometry</h4>
+                        <p class="text-slate-600 text-sm mt-1">2D master sketching establishing precise coordinate clearance boundaries.</p>
+                    </div>
+                    <div class="border-l-4 border-slate-300 pl-4">
+                        <h4 class="font-bold text-slate-900">SolidCAM Programming</h4>
+                        <p class="text-slate-600 text-sm mt-1">Independently generated CNC toolpaths for custom large-diameter gear teeth.</p>
+                    </div>
+                    <div class="border-l-4 border-slate-300 pl-4">
+                        <h4 class="font-bold text-slate-900">Virtual Validation</h4>
+                        <p class="text-slate-600 text-sm mt-1">Utilized SolidVerify 3D simulation to ensure clash-free physical machining.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 4: GMS Full Car CAD -->
+    <section class="py-24 section-bg-alt">
+        <div class="max-w-7xl mx-auto px-8 text-center">
+            <div class="text-sm font-bold tracking-widest text-orange-600 uppercase mb-3">Gator Motorsports</div>
+            <h2 class="text-4xl font-extrabold text-slate-900 mb-6">Full Vehicle CAD Assembly</h2>
+            <p class="text-slate-600 text-lg max-w-3xl mx-auto mb-12">Rigorous spatial packaging and system integration of complex aerodynamic surfaces with central structural frameworks.</p>
+            
+            <img src="image_a6ca0b.jpg" alt="GMS CAD" onerror="this.onerror=null; this.src='https://placehold.co/1200x600/e2e8f0/94a3b8?text=image_a6ca0b.jpg';" class="w-full max-w-5xl mx-auto object-cover shadow-xl border border-slate-200 bg-white">
+        </div>
+    </section>
+
+    <!-- PROJECT 5: GMS DRS Kinematics -->
+    <section class="py-24 max-w-7xl mx-auto px-8">
+        <div class="text-center mb-12">
+            <div class="text-sm font-bold tracking-widest text-orange-600 uppercase mb-3">Gator Motorsports</div>
+            <h2 class="text-4xl font-extrabold text-slate-900">Multi-Stage DRS Kinematics</h2>
+            <p class="text-slate-600 text-lg mt-4 max-w-2xl mx-auto">Manual kinematic linkages enabling precise manipulation of aerodynamic parameters across three distinct states.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="space-y-4">
+                <div class="relative bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-bold rounded-md shadow-sm z-10 text-slate-900">Closed State</span>
+                    <img src="image_a6cabe.jpg" alt="DRS Closed" onerror="this.onerror=null; this.src='https://placehold.co/500x400/f1f5f9/94a3b8?text=image_a6cabe.jpg';" class="w-full object-contain h-64 mix-blend-multiply">
+                </div>
+                <h4 class="font-bold text-center text-slate-800">Maximum Downforce</h4>
+            </div>
+            <div class="space-y-4">
+                <div class="relative bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-bold rounded-md shadow-sm z-10 text-slate-900">V4 State</span>
+                    <img src="image_a6cd70.jpg" alt="DRS V4" onerror="this.onerror=null; this.src='https://placehold.co/500x400/f1f5f9/94a3b8?text=image_a6cd70.jpg';" class="w-full object-contain h-64 mix-blend-multiply">
+                </div>
+                <h4 class="font-bold text-center text-slate-800">Intermediate Angle</h4>
+            </div>
+            <div class="space-y-4">
+                <div class="relative bg-slate-50 p-4 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-bold rounded-md shadow-sm z-10 text-slate-900">V8 State</span>
+                    <img src="image_a6cdc8.jpg" alt="DRS V8" onerror="this.onerror=null; this.src='https://placehold.co/500x400/f1f5f9/94a3b8?text=image_a6cdc8.jpg';" class="w-full object-contain h-64 mix-blend-multiply">
+                </div>
+                <h4 class="font-bold text-center text-slate-800">Drag Reduction</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 6: GMS Surface Modeling -->
+    <section class="py-24 section-bg-alt">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="text-sm font-bold tracking-widest text-orange-600 uppercase mb-3">Gator Motorsports</div>
+            <div class="flex flex-col lg:flex-row gap-16 items-center">
+                <div class="w-full lg:w-1/2 space-y-6">
+                    <h2 class="text-4xl font-extrabold text-slate-900">Complex Surface Modeling</h2>
+                    <p class="text-slate-600 text-lg">Advanced 3D splines and complex guide curves utilized to create data-driven aerodynamic geometries from scratch.</p>
+                    <ul class="space-y-4 pt-4">
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-3 mt-1"><i class="fa-solid fa-bezier-curve"></i></span>
+                            <div><strong class="text-slate-900">Nose Cone Generation:</strong> Surface lofts directly dictated by scalar values to optimize stagnation points.</div>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-orange-500 mr-3 mt-1"><i class="fa-solid fa-layer-group"></i></span>
+                            <div><strong class="text-slate-900">Flanged Carbon End Caps:</strong> Structural airfoil end caps with internal spar integration to minimize mass while maximizing structural rigidity and bonding area.</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="w-full lg:w-1/2 grid grid-cols-2 gap-4">
+                    <img src="image_a72b9d.png" alt="Carbon End Cap" onerror="this.onerror=null; this.src='https://placehold.co/600x300/e2e8f0/94a3b8?text=image_a72b9d.png';" class="col-span-2 w-full object-cover shadow-sm border border-slate-200 bg-white">
+                    <img src="image_a7283b.png" alt="Nose Cone Iso" onerror="this.onerror=null; this.src='https://placehold.co/300x300/e2e8f0/94a3b8?text=image_a7283b.png';" class="w-full h-full object-cover shadow-sm border border-slate-200 bg-white">
+                    <div class="flex flex-col gap-4">
+                        <img src="image_a72858.png" alt="Nose Cone Front" onerror="this.onerror=null; this.src='https://placehold.co/300x200/e2e8f0/94a3b8?text=image_a72858.png';" class="w-full h-full object-cover shadow-sm border border-slate-200 bg-white">
+                        <img src="image_a72861.png" alt="Nose Cone Side" onerror="this.onerror=null; this.src='https://placehold.co/300x200/e2e8f0/94a3b8?text=image_a72861.png';" class="w-full h-full object-cover shadow-sm border border-slate-200 bg-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 7: GMS CFD Validation -->
+    <section class="py-24 max-w-7xl mx-auto px-8">
+        <div class="text-center mb-12">
+            <div class="text-sm font-bold tracking-widest text-orange-600 uppercase mb-3">Gator Motorsports</div>
+            <h2 class="text-4xl font-extrabold text-slate-900">CFD Aerodynamic Validation</h2>
+            <p class="text-slate-600 text-lg mt-4 max-w-2xl mx-auto">Empirical STAR-CCM+ simulation data dictates the physical CAD geometry, ensuring functional performance over aesthetic form.</p>
+        </div>
+        
+        <div class="flex flex-col md:flex-row gap-8 items-stretch h-auto md:h-96">
+            <div class="flex-1 relative rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-black flex items-center justify-center">
+                <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-bold rounded-md shadow-sm z-10 text-slate-900">Scalar Pressure Field</span>
+                <img src="image_a73a44.png" alt="STAR-CCM+ Scalar" onerror="this.onerror=null; this.src='https://placehold.co/600x400/1e293b/94a3b8?text=image_a73a44.png';" class="w-full h-full object-contain">
+            </div>
+            <div class="flex-1 relative rounded-xl overflow-hidden shadow-lg border border-slate-200 bg-white flex items-center justify-center">
+                <span class="absolute top-4 left-4 bg-white/90 px-3 py-1 text-xs font-bold rounded-md shadow-sm z-10 text-slate-900">Velocity Streamlines</span>
+                <img src="image_a884e2.jpg" alt="STAR-CCM+ Streamline" onerror="this.onerror=null; this.src='https://placehold.co/600x400/f8fafc/94a3b8?text=image_a884e2.jpg';" class="w-full h-full object-contain">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-orange-50 border-l-4 border-orange-500 p-6 rounded-r-xl">
+                <h4 class="font-bold text-slate-900 text-lg">Stagnation Analysis</h4>
+                <p class="text-slate-700 mt-2">Validating high-pressure zones across front elements to ensure intended aero balance.</p>
+            </div>
+            <div class="bg-slate-50 border-l-4 border-slate-800 p-6 rounded-r-xl">
+                <h4 class="font-bold text-slate-900 text-lg">Kinematic Routing</h4>
+                <p class="text-slate-700 mt-2">Streamlines verify physical geometries successfully redirect majority flow downward to the underbody.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECT 8: CLOSING -->
+    <section id="resume" class="py-32 bg-slate-900 text-center px-8">
+        <div class="max-w-3xl mx-auto space-y-8">
+            <h2 class="text-5xl font-extrabold text-white">Ready to Innovate.</h2>
+            <p class="text-slate-400 text-xl font-light">
+                Hands-on hardware development. Strict spatial tolerancing. Proven DFM execution. I am currently seeking opportunities to bring high-level kinematic and aerospace concepts to life.
+            </p>
+            <div class="pt-8 flex justify-center">
+                <a href="#" class="bg-white text-slate-900 w-48 py-4 text-center rounded-md font-bold text-sm uppercase tracking-wider hover:bg-slate-200 transition shadow-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-8 text-center text-slate-500 text-sm">
+        <p>&copy; 2026 Freddy Fernandez. Designed & Developed for Hardware Excellence.</p>
+    </footer>
+
+</body>
+</html>
